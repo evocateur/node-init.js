@@ -11,6 +11,11 @@
 -   new `--no-check-git-status` flag to ignore safety check
 
 
+### Changed
+
+-   `npm run fixpack` is now part of the "pretest" hook rather than "posttest"
+
+
 ### Fixed
 
 -   support .eslintrc.json file in `test/`, `tests/`, or `__tests__/` instead of always assuming `test/`
