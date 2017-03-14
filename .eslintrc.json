@@ -2,11 +2,12 @@
   "extends": [
     "eslint:recommended",
     "plugin:node/recommended",
-    "standard",
-    "plugin:ava/recommended"
+    "plugin:ava/recommended",
+    "plugin:promise/recommended"
   ],
   "plugins": [
     "ava",
-    "node"
+    "node",
+    "promise"
   ]
 }

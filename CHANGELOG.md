@@ -10,6 +10,8 @@
 
 -   new `--no-check-git-status` flag to ignore safety check
 
+-   use [prettier](https://github.com/prettier/prettier) rather than JavaScript Standard
+
 
 ### Changed
 

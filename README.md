@@ -60,7 +60,7 @@ node-init --help
 
 ### Code Quality
 
--   installs and configures [ESLint](http://eslint.org/), with [JavaScript Standard Style](https://github.com/feross/eslint-config-standard) and [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
+-   installs and configures [ESLint](http://eslint.org/), with [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
 
 -   adds an `npm run eslint` script for ESLint
 
@@ -73,6 +73,8 @@ node-init --help
 -   add `npm run mocha` if using [mocha](https://github.com/mochajs/mocha)
 
 -   add `npm run nyc` if using [nyc](https://github.com/istanbuljs/nyc)
+
+-   installs and configures [prettier](https://github.com/prettier/prettier) and `npm run prettier`
 
 
 ### Continuous Integration

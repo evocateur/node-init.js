@@ -36,16 +36,15 @@
   },
   "devDependencies": {
     "ava": "^0.18.1",
-    "eslint": "^3.8.1",
-    "eslint-config-standard": "^7.0.0",
+    "eslint": "^3.17.1",
     "eslint-plugin-ava": "^4.0.0",
-    "eslint-plugin-node": "^4.0.0",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.41.0",
     "nyc": "^10.0.0",
     "pify": "^2.3.0",
+    "prettier": "^0.22.0",
     "rimraf": "^2.6.1"
   },
   "directories": {
@@ -72,7 +71,9 @@
     "fixpack": "fixpack",
     "flow_check": "flow check",
     "nyc": "nyc check-coverage --lines 45",
-    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
+    "posttest": "npm run eslint && npm run flow_check",
+    "pretest": "npm run prettier && npm run fixpack",
+    "prettier": "prettier --single-quote --write \"{{app,bin,lib,src,test,tests,__{tests,mocks}__}/**/,}*.{js,jsx,mjs}\"",
     "test": "npm run ava && npm run nyc"
   }
 }
